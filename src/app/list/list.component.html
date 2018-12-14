@@ -1,0 +1,39 @@
+<div style="text-align:center">
+  	<button mat-raised-button type="button"  (click)="cerrar()"> Cerrar </button>
+  </div>
+<div class="aligner">
+	<mat-card class="aligner-center-item">
+	<!-- LIST OF ITEMS -->
+	<!--<div class="row justify-content-md-center">
+		<mat-list >-->
+			<!--<li class="list-group-item list-group-item-action" *ngFor="let item of items" >-->
+				 <mat-list-item role="listitem" *ngFor="let item of items">
+				 	
+				 	<mat-card-actions style="text-align: center;">
+				 		<mat-action-list>
+				     	 <span matLine >{{item.name}}</span>
+				     <!-- <span class="badge">{{item.creationDate | date}}</span>-->
+					      	  <button mat-raised-button  (click)="cambioEstado(item)">{{ 
+
+					      	  	item.modificado ? "Realizado" : "No realizado"
+					      	  		
+
+					      	  }}</button>	
+					          <button mat-raised-button  (click)="onEdit(item)">Editar</button>
+					          <button mat-raised-button (click)="onRemove(item)">Borrar</button>
+					     </mat-action-list>
+				      </mat-card-actions>
+				    
+					</mat-list-item>
+			<!--</li>-->
+		<!--</mat-list>
+	</div>-->
+
+	<!-- NEW ITEM -->
+	<div class="row justify-content-md-center">
+		<nav>
+			<button mat-raised-button routerLink="/newItem" class="pull-right">Nuevo item</button>
+		</nav>
+	</div>
+	</mat-card>
+</div>

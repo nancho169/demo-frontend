@@ -1,0 +1,27 @@
+	<div style="text-align:center">
+  	<button mat-raised-button type="button"  (click)="cerrar()"> Cerrar </button>
+  </div>
+<div class="aligner">
+
+	<mat-card class="aligner-center-item">
+
+		<mat-card-content>
+			<form (ngSubmit)="onSubmit()" [formGroup]="newItemForm">
+				<mat-form-field style="width: 100%; margin-bottom: 10px;" [ngClass]="{'mat-input-invalid': submitted && error?.code == 1}">
+					<input matInput type="text" formControlName="name" placeholder='¿Que hacer?'>
+
+					
+				</mat-form-field>	
+				<mat-form-field style="width: 100%; margin-bottom: 10px;" [ngClass]="{'mat-input-invalid': submitted && error?.code == 1}">
+					<input matInput type="date" formControlName="fecha" placeholder='fecha'>
+
+					
+				</mat-form-field>	
+				
+								<button mat-raised-button type="submit" >Guardar</button>
+			</form>
+			
+
+		</mat-card-content>
+	</mat-card>
+</div>

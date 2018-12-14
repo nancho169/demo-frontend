@@ -1,0 +1,19 @@
+<div style="text-align:center">
+  	<button mat-raised-button type="button"  (click)="cerrar()"> Cerrar </button>
+  </div>
+<div class="aligner">
+	<mat-card class="aligner-center-item">
+		<mat-card-content>
+			<h3>Edición de item</h3>
+			<form (ngSubmit)="guardaItemEditado()" [formGroup]="editForm">
+				<mat-form-field style="width: 100%; margin-bottom: 10px;" [ngClass]="{'mat-input-invalid': submitted && error?.code == 1}">
+					<input matInput type="text" formControlName="nombre" value='{{name}}'>
+					
+				</mat-form-field>	
+								<button mat-raised-button  >Guardar</button>
+			</form>
+			
+
+		</mat-card-content>
+	</mat-card>
+</div>
