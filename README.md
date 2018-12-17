@@ -18,6 +18,17 @@ Este tabajo practico cuenta con las siguientes funcionalidades:
 Se utilizo Angular Material como componente de estilo en la aplicación. https://material.angular.io/
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
+## Intalación 
+Clonar repositorio:
+ 
+  $ git clone https://github.com/nancho169/demo-frontend 
+
+Bajar dependecias:
+
+  $ cd demo-frontend
+  $ npm install
+  $ npm run demo-frontend
+
 ## Realizado por:
 Hernan Gimenez -
 Eduardo Rojel
