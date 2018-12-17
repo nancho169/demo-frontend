@@ -29,6 +29,10 @@ Bajar dependecias:
   $ npm install
   $ npm run demo-frontend
 
+## Requerimientos
+ Firefox 57 or Chrome 64.0.3282.140 onwards
+ NPM 6.0.8 (y versiones posteriores)
+
 ## Realizado por:
 Hernan Gimenez -
 Eduardo Rojel
